@@ -1,0 +1,31 @@
+CREATE TABLE "Tickets" (
+  "ticket_id" SERIAL,
+  "price" NUMERIC (8,2),
+  "Customer_id" SERIAL,
+  "movie_id" SERIAL,
+  PRIMARY KEY ("ticket_id")
+);
+
+CREATE TABLE "Concesions " (
+  "Item_id" SERIAL,
+  "product_name" VARCHAR(100),
+  "price" NUMERIC(8,2),
+  "Customer_id" SERIAL,
+  PRIMARY KEY ("Item_id")
+);
+
+CREATE TABLE "Movies" (
+  "Movie_id" SERIAL,
+  "movie_name" VARCHAR(150),
+  "movie_showtime" VARCHAR(150),
+  PRIMARY KEY ("Movie_id")
+);
+
+CREATE TABLE "Customer" (
+  "Customer_id" SERIAL,
+  "first_name" VARCHAR (100),
+  "last_name" VARCHAR(100),
+  "billing_info" VARCHAR (150),
+  PRIMARY KEY ("Customer_id")
+);
+
