@@ -1,0 +1,54 @@
+insert into "Customer" (
+"Customer_id",
+first_name,
+last_name,
+billing_info
+)
+VALUES(
+1,
+'Javier',
+'Vargas',
+'3883338383838'
+);
+
+insert into "Movies" (
+"Movie_id",
+movie_name,
+movie_showtime
+)
+VALUES(
+1,
+'Aquaman',
+'12:45 AM'
+);
+
+insert into "Concesions " (
+"Item_id",
+product_name,
+"Customer_id" ,
+price
+)
+
+values(
+1,
+'Popcorn',
+1,
+23.10
+);
+
+insert into "Tickets"(
+ticket_id,
+price,
+Customer_id,
+movie_id
+)
+
+values (
+1,
+12.45,
+1,
+1
+)
+
+
+select * from "Movies" 
